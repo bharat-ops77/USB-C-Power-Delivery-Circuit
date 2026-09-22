@@ -9,8 +9,17 @@ A custom hardware and firmware solution for negotiating Power Delivery (PD) cont
 ##  • Schematic 
 <img width="2067" height="1384" alt="Screenshot 2026-09-22 221122" src="https://github.com/user-attachments/assets/eb9dbc4c-b8c9-48b3-a957-8ab5d3972372" />
 
-Hardware Specifications
-Pin MappingThe firmware expects the following pin connections to the microcontroller:
+# • Hardware Specifications
+## Pin Mapping
+### The firmware expects the following pin connections to the microcontroller:
+<img width="2816" height="1536" alt="Gemini_Generated_Image_mlpsymlpsymlpsym" src="https://github.com/user-attachments/assets/4805a769-6458-4107-a4de-6d9a26a32252" />
+# System Limits
+The safety boundaries defined in the firmware (usb_pd_driver.h) are:
+Maximum Power: 60 W   
+Maximum Current: 5 A   
+Maximum Voltage: 12 V
+# Repository Structure
+```
 usb-c-pd-trigger/
 ├── Firmware/
 │   ├── usb-c-pd-trigger.ino       # Main Arduino sketch
@@ -18,16 +27,16 @@ usb-c-pd-trigger/
 │   ├── tcpm_driver.cpp / .h       # Hardware I2C wrapper
 │   ├── usb_pd_policy.c            # USB PD policy engine
 │   ├── usb_pd_protocol.c          # USB PD state machine
-│   ├── usb_pd_driver.c / .h       # Sink capabilities and board definitions[cite: 8, 9]
-│   ├── usb_pd.h                   # Core PD protocol definitions[cite: 4]
-│   └── usb_pd_tcpm.h              # Type-C Port Manager interface[cite: 10]
+│   ├── usb_pd_driver.c / .h       # Sink capabilities and board definitions
+│   ├── usb_pd.h                   # Core PD protocol definitions
+│   └── usb_pd_tcpm.h              # Type-C Port Manager interface
 ├── Hardware/
 │   ├── Schematics/                # PDF schematics of the trigger board
 │   ├── Gerbers/                   # ZIP file containing Gerber files for PCB fabrication
 │   └── Source/                    # KiCad/Altium/Eagle project files
 ├── Docs/
 │   ├── images/                    # High-resolution photos of the populated board
-│   └── datasheets/                # Reference datasheets (e.g., FUSB302B)
-├── .gitignore                     # Standard C++ and Arduino gitignore
-├── LICENSE                        # Open-source license (e.g., MIT)
+│   └── datasheets/                #  FUSB
+├── LICENSE                        # GNU License
 └── README.md                      # Project documentation (Template below)
+```
