@@ -13,12 +13,15 @@ A custom hardware and firmware solution for negotiating Power Delivery (PD) cont
 ## Pin Mapping
 ### The firmware expects the following pin connections to the microcontroller:
 <img width="2816" height="1536" alt="Gemini_Generated_Image_mlpsymlpsymlpsym" src="https://github.com/user-attachments/assets/4805a769-6458-4107-a4de-6d9a26a32252" />
+
 # System Limits
 The safety boundaries defined in the firmware (usb_pd_driver.h) are:
 Maximum Power: 60 W   
 Maximum Current: 5 A   
 Maximum Voltage: 12 V
+
 # Repository Structure
+
 ```
 usb-c-pd-trigger/
 ├── Firmware/
