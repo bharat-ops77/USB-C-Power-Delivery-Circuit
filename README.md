@@ -95,7 +95,7 @@ usb-c-pd-trigger/
 ├── Hardware/
 │   ├── Schematics/                # PDF schematics of the trigger board
 │   ├── Gerbers/                   # ZIP file containing Gerber files for PCB fabrication
-│   └── Source/                    # KiCad/Altium/Eagle project files
+│   └── Source/                    # KiCad project files
 ├── Docs/
 │   ├── images/                    # High-resolution photos of the populated board
 │   └── datasheets/                #  FUSB
