@@ -84,7 +84,7 @@ Determines which voltages to accept and request based on the capabilities advert
 ```
 usb-c-pd-trigger/
 ├── Firmware/
-│   ├── usb-c-pd-trigger.ino       # Main Arduino sketch
+│   ├── usb-c-demo.ino             # Main Arduino sketch
 │   ├── FUSB302.c / FUSB302.h      # FUSB302B chip driver
 │   ├── tcpm_driver.cpp / .h       # Hardware I2C wrapper
 │   ├── usb_pd_policy.c            # USB PD policy engine
